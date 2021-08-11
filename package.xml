@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>testpkg</name>
+  <version>0.0.0</version>
+  <description>The testpkg package</description>
+
+  <!-- 需要一個 maintainer(維護者)標籤, 允許有多個, 一人一個標籤 -->
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="ryan@todo.todo">ryan</maintainer>
+
+
+  <!-- 需要一個 licence(許可證)標籤, 允許多個, 一個證一個標籤 -->
+  <!-- 常用的 licence 字串: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>TODO</license>
+
+
+  <!-- Url 標籤是可選的, 允許多個, 一個 url 一個標籤 -->
+  <!-- 供選擇的屬性類型是: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/testpkg</url> -->
+
+
+  <!-- 作者標籤是可選的, 允許多個, 一個作者一個標籤 -->
+  <!-- Authors(作者) 不必是 maintainers(維護者), 但可以是 -->
+  <!-- Example: -->
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+
+
+  <!-- *depend 標籤用來指定依賴項 -->
+  <!-- 依賴可以是 catkin packages 或系統依賴 -->
+  <!-- Examples: -->
+  <!-- 使用 depend 作為一個 packages 的快捷方式, 都是 build 和 exec 的依賴項 -->
+  <!--   <depend>roscpp</depend> -->
+  <!--   注意這等效以下內容: -->
+  <!--   <build_depend>roscpp</build_depend> -->
+  <!--   <exec_depend>roscpp</exec_depend> -->
+  <!-- 對編譯時需要的包使用 build_depend: -->
+  <!--   <build_depend>message_generation</build_depend> -->
+  <!-- 對你需要的包使用 build_export_depend  以對此包進行 build: -->
+  <!--   <build_export_depend>message_generation</build_export_depend> -->
+  <!-- 使用 buildtool_depend 構建工具包: -->
+  <!--   <buildtool_depend>catkin</buildtool_depend> -->
+  <!-- 對執行時所需要的包使用 exec_depend: -->
+  <!--   <exec_depend>message_runtime</exec_depend> -->
+  <!-- 對僅用於測試的包使用 test_depend: -->
+  <!--   <test_depend>gtest</test_depend> -->
+  <!-- 對構建文檔所需要的包使用 doc_depend: -->
+  <!--   <doc_depend>doxygen</doc_depend> -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+
+  <!-- export 標籤包含其他未指定的標籤 -->
+  <export>
+    <!-- 其他工具可以請求附加信息放在此處 -->
+
+  </export>
+</package>
